@@ -1,0 +1,112 @@
+:root{
+    --primary-red: hsl(0, 78%, 62%);
+    --primary-cyan: hsl(180, 62%, 55%);
+    --primary-orange: hsl(34, 97%, 64%);
+    --primary-blue: hsl(212, 86%, 64%);
+
+    --main-dark: hsl(234, 12%, 34%);
+    --main-color: hsl(229, 6%, 66%);
+    --main-light: hsl(0, 0%, 98%);
+
+    --main-font: 'Poppins', sans-serif;
+
+}
+
+body{
+    background: var(--main-light);
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-size:15px;
+    font-weight:200;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size:1.5rem;
+    font-weight:200;
+}
+
+h2{
+    font-size:1.1rem;
+}
+.leading-text{
+    font-weight:600;
+    color: var(--main-dark);
+}
+
+.mb-1{
+    margin-bottom:1rem;
+}
+
+/***************** SECTION ***********************/
+.section-price-cards{
+    padding: 2rem 8%;
+    padding-top:4rem;
+}
+
+.section-price-cards-container{
+    margin-top:2rem;
+    padding: 2rem 0;
+}
+
+.price-card{
+    padding: 1.5rem;
+    background: white;
+    border-radius: 0 0 12px 12px;
+    width:95%;
+    position:relative;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    margin-bottom:1.5rem;
+}
+
+.price-card h2{
+    margin-bottom: 0.5rem;
+
+}
+
+.price-card p{
+    padding-right:1rem;
+
+}
+.price-card:before{
+    position:absolute;
+    content: "";
+    width:100%;
+    height:5px;
+    top:0;
+    left:0;
+    border-radius: 12px 12px 0 0;
+}
+
+#supervisor:before{
+    background:var(--primary-cyan);
+}
+
+#team-builder:before{
+    background:var(--primary-red);
+}
+
+#karma:before{
+    background:var(--primary-orange);
+}
+
+#calculator:before{
+    background:var(--primary-blue);
+}
+
+.price-card-image{
+    width:100%;
+    text-align:right;
+    margin-top:1.5rem;
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
